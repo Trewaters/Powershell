@@ -1,0 +1,19 @@
+# Get help
+Get-Help new-item -Detailed
+Get-Help new-item -Full
+Get-Help * | Select-Object Name,Synopsis | Format-Table -Auto
+
+Get-NetIPAddress
+Get-NetIPv4Protocol
+IPConfig /all
+
+# Chande current directory or other location
+Set-Location -Path C:\Windows
+
+# create directory
+new-item testFolder # Type Directory, File
+# or use make directory
+mkdir testFolder2
+
+Remove-Item
+Set-ACL

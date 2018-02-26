@@ -1,0 +1,8 @@
+
+Fix the corrupted user profile issue. 
+- Find the username that is having issues 
+- Follow the steps that I have in this document ( C:\Users\lgrisby\OneDrive - San Francisco Bay Area Rapid Transit District\1-Internal\Resources\Computer Workstation\corrupt user profile 2015-02-09.pdf ) 
+
+Pulling event viewer logs would be helpful. Get event logs
+
+Software Compliance

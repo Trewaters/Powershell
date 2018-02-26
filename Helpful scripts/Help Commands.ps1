@@ -1,0 +1,1 @@
+﻿get-help write-host -Full > H:\Powershell\help_writeHost.txt

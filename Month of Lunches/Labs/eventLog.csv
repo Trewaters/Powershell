@@ -1,0 +1,1756 @@
+#TYPE System.Diagnostics.EventLogEntry#security/Microsoft-Windows-Security-Auditing/4672
+"EventID","MachineName","Data","Index","Category","CategoryNumber","EntryType","Message","Source","ReplacementStrings","InstanceId","TimeGenerated","TimeWritten","UserName","Site","Container"
+"4672","Bit01","System.Byte[]","421001","(12548)","12548","SuccessAudit","Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege","Microsoft-Windows-Security-Auditing","System.String[]","4672","2/13/2018 6:53:12 AM","2/13/2018 6:53:12 AM",,,
+"4624","Bit01","System.Byte[]","421000","(12544)","12544","SuccessAudit","An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Type:			5
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","Microsoft-Windows-Security-Auditing","System.String[]","4624","2/13/2018 6:53:12 AM","2/13/2018 6:53:12 AM",,,
+"4672","Bit01","System.Byte[]","420999","(12548)","12548","SuccessAudit","Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege","Microsoft-Windows-Security-Auditing","System.String[]","4672","2/13/2018 6:45:13 AM","2/13/2018 6:45:13 AM",,,
+"4624","Bit01","System.Byte[]","420998","(12544)","12544","SuccessAudit","An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Type:			5
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","Microsoft-Windows-Security-Auditing","System.String[]","4624","2/13/2018 6:45:13 AM","2/13/2018 6:45:13 AM",,,
+"4672","Bit01","System.Byte[]","420997","(12548)","12548","SuccessAudit","Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege","Microsoft-Windows-Security-Auditing","System.String[]","4672","2/13/2018 6:43:51 AM","2/13/2018 6:43:51 AM",,,
+"4624","Bit01","System.Byte[]","420996","(12544)","12544","SuccessAudit","An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Type:			5
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","Microsoft-Windows-Security-Auditing","System.String[]","4624","2/13/2018 6:43:51 AM","2/13/2018 6:43:51 AM",,,
+"4797","Bit01","System.Byte[]","420995","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:47 AM","2/13/2018 6:40:47 AM",,,
+"4797","Bit01","System.Byte[]","420994","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Tre'
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:47 AM","2/13/2018 6:40:47 AM",,,
+"4797","Bit01","System.Byte[]","420993","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:47 AM","2/13/2018 6:40:47 AM",,,
+"4797","Bit01","System.Byte[]","420992","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:47 AM","2/13/2018 6:40:47 AM",,,
+"4797","Bit01","System.Byte[]","420991","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:47 AM","2/13/2018 6:40:47 AM",,,
+"4797","Bit01","System.Byte[]","420990","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:47 AM","2/13/2018 6:40:47 AM",,,
+"4797","Bit01","System.Byte[]","420989","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:47 AM","2/13/2018 6:40:47 AM",,,
+"4797","Bit01","System.Byte[]","420988","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Tre'
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:47 AM","2/13/2018 6:40:47 AM",,,
+"4797","Bit01","System.Byte[]","420987","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:47 AM","2/13/2018 6:40:47 AM",,,
+"4797","Bit01","System.Byte[]","420986","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:47 AM","2/13/2018 6:40:47 AM",,,
+"4797","Bit01","System.Byte[]","420985","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:47 AM","2/13/2018 6:40:47 AM",,,
+"4797","Bit01","System.Byte[]","420984","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:47 AM","2/13/2018 6:40:47 AM",,,
+"4797","Bit01","System.Byte[]","420983","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4797","Bit01","System.Byte[]","420982","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Tre'
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4797","Bit01","System.Byte[]","420981","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4797","Bit01","System.Byte[]","420980","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4797","Bit01","System.Byte[]","420979","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4797","Bit01","System.Byte[]","420978","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4797","Bit01","System.Byte[]","420977","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4797","Bit01","System.Byte[]","420976","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Tre'
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4797","Bit01","System.Byte[]","420975","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4797","Bit01","System.Byte[]","420974","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4797","Bit01","System.Byte[]","420973","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4797","Bit01","System.Byte[]","420972","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4634","Bit01","System.Byte[]","420971","(12545)","12545","SuccessAudit","An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x3bbe0f4
+
+Logon Type:			7
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.","Microsoft-Windows-Security-Auditing","System.String[]","4634","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4634","Bit01","System.Byte[]","420970","(12545)","12545","SuccessAudit","An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x3bc3dcb
+
+Logon Type:			7
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.","Microsoft-Windows-Security-Auditing","System.String[]","4634","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4672","Bit01","System.Byte[]","420969","(12548)","12548","SuccessAudit","Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		trewaters@hotmail.com
+	Account Domain:		MicrosoftAccount
+	Logon ID:		0x3bbe0f4
+
+Privileges:		SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege","Microsoft-Windows-Security-Auditing","System.String[]","4672","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4624","Bit01","System.Byte[]","420968","(12544)","12544","SuccessAudit","An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Type:			7
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		trewaters@hotmail.com
+	Account Domain:		MicrosoftAccount
+	Logon ID:		0x3bc3dcb
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2c4
+	Process Name:		C:\Windows\System32\lsass.exe
+
+Network Information:
+	Workstation Name:	BIT0
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Negotiat
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","Microsoft-Windows-Security-Auditing","System.String[]","4624","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4624","Bit01","System.Byte[]","420967","(12544)","12544","SuccessAudit","An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Type:			7
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		trewaters@hotmail.com
+	Account Domain:		MicrosoftAccount
+	Logon ID:		0x3bbe0f4
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2c4
+	Process Name:		C:\Windows\System32\lsass.exe
+
+Network Information:
+	Workstation Name:	BIT0
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Negotiat
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","Microsoft-Windows-Security-Auditing","System.String[]","4624","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4648","Bit01","System.Byte[]","420966","(12544)","12544","SuccessAudit","A logon was attempted using explicit credentials.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		trewaters@hotmail.com
+	Account Domain:		MicrosoftAccount
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x2c4
+	Process Name:		C:\Windows\System32\lsass.exe
+
+Network Information:
+	Network Address:	-
+	Port:			-
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account?s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command.","Microsoft-Windows-Security-Auditing","System.String[]","4648","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4738","Bit01","System.Byte[]","420965","(13824)","13824","SuccessAudit","A user account was changed.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Target Account:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		Bit01
+
+Changed Attributes:
+	SAM Account Name:	-
+	Display Name:		Tre' Grisby
+	User Principal Name:	-
+	Home Directory:		-
+	Home Drive:		-
+	Script Path:		-
+	Profile Path:		-
+	User Workstations:	-
+	Password Last Set:	-
+	Account Expires:		-
+	Primary Group ID:	-
+	AllowedToDelegateTo:	-
+	Old UAC Value:		-
+	New UAC Value:		-
+	User Account Control:	-
+	User Parameters:	-
+	SID History:		-
+	Logon Hours:		-
+
+Additional Information:
+	Privileges:		-","Microsoft-Windows-Security-Auditing","System.String[]","4738","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4738","Bit01","System.Byte[]","420964","(13824)","13824","SuccessAudit","A user account was changed.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Target Account:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		Bit01
+
+Changed Attributes:
+	SAM Account Name:	-
+	Display Name:		-
+	User Principal Name:	-
+	Home Directory:		-
+	Home Drive:		-
+	Script Path:		-
+	Profile Path:		-
+	User Workstations:	-
+	Password Last Set:	-
+	Account Expires:		-
+	Primary Group ID:	-
+	AllowedToDelegateTo:	-
+	Old UAC Value:		-
+	New UAC Value:		-
+	User Account Control:	-
+	User Parameters:	-
+	SID History:		-
+	Logon Hours:		-
+
+Additional Information:
+	Privileges:		-","Microsoft-Windows-Security-Auditing","System.String[]","4738","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4634","Bit01","System.Byte[]","420963","(12545)","12545","SuccessAudit","An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x3bbe01e
+
+Logon Type:			7
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.","Microsoft-Windows-Security-Auditing","System.String[]","4634","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4634","Bit01","System.Byte[]","420962","(12545)","12545","SuccessAudit","An account was logged off.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x3bbe10b
+
+Logon Type:			7
+
+This event is generated when a logon session is destroyed. It may be positively correlated with a logon event using the Logon ID value. Logon IDs are only unique between reboots on the same computer.","Microsoft-Windows-Security-Auditing","System.String[]","4634","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4672","Bit01","System.Byte[]","420961","(12548)","12548","SuccessAudit","Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		trewaters@hotmail.com
+	Account Domain:		MicrosoftAccount
+	Logon ID:		0x3bbe01e
+
+Privileges:		SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege","Microsoft-Windows-Security-Auditing","System.String[]","4672","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4624","Bit01","System.Byte[]","420960","(12544)","12544","SuccessAudit","An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Type:			7
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		trewaters@hotmail.com
+	Account Domain:		MicrosoftAccount
+	Logon ID:		0x3bbe10b
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x1e14
+	Process Name:		C:\Windows\System32\winlogon.exe
+
+Network Information:
+	Workstation Name:	BIT0
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","Microsoft-Windows-Security-Auditing","System.String[]","4624","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4624","Bit01","System.Byte[]","420959","(12544)","12544","SuccessAudit","An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Type:			7
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		trewaters@hotmail.com
+	Account Domain:		MicrosoftAccount
+	Logon ID:		0x3bbe01e
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x1e14
+	Process Name:		C:\Windows\System32\winlogon.exe
+
+Network Information:
+	Workstation Name:	BIT0
+	Source Network Address:	127.0.0.1
+	Source Port:		0
+
+Detailed Authentication Information:
+	Logon Process:		User32 
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","Microsoft-Windows-Security-Auditing","System.String[]","4624","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4648","Bit01","System.Byte[]","420958","(12544)","12544","SuccessAudit","A logon was attempted using explicit credentials.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Account Whose Credentials Were Used:
+	Account Name:		trewaters@hotmail.com
+	Account Domain:		MicrosoftAccount
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Target Server:
+	Target Server Name:	localhost
+	Additional Information:	localhost
+
+Process Information:
+	Process ID:		0x1e14
+	Process Name:		C:\Windows\System32\winlogon.exe
+
+Network Information:
+	Network Address:	127.0.0.1
+	Port:			0
+
+This event is generated when a process attempts to log on an account by explicitly specifying that account?s credentials.  This most commonly occurs in batch-type configurations such as scheduled tasks, or when using the RUNAS command.","Microsoft-Windows-Security-Auditing","System.String[]","4648","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4738","Bit01","System.Byte[]","420957","(13824)","13824","SuccessAudit","A user account was changed.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Target Account:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		Bit01
+
+Changed Attributes:
+	SAM Account Name:	-
+	Display Name:		Tre' Grisby
+	User Principal Name:	-
+	Home Directory:		-
+	Home Drive:		-
+	Script Path:		-
+	Profile Path:		-
+	User Workstations:	-
+	Password Last Set:	-
+	Account Expires:		-
+	Primary Group ID:	-
+	AllowedToDelegateTo:	-
+	Old UAC Value:		-
+	New UAC Value:		-
+	User Account Control:	-
+	User Parameters:	-
+	SID History:		-
+	Logon Hours:		-
+
+Additional Information:
+	Privileges:		-","Microsoft-Windows-Security-Auditing","System.String[]","4738","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4738","Bit01","System.Byte[]","420956","(13824)","13824","SuccessAudit","A user account was changed.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Target Account:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		Bit01
+
+Changed Attributes:
+	SAM Account Name:	-
+	Display Name:		-
+	User Principal Name:	-
+	Home Directory:		-
+	Home Drive:		-
+	Script Path:		-
+	Profile Path:		-
+	User Workstations:	-
+	Password Last Set:	-
+	Account Expires:		-
+	Primary Group ID:	-
+	AllowedToDelegateTo:	-
+	Old UAC Value:		-
+	New UAC Value:		-
+	User Account Control:	-
+	User Parameters:	-
+	SID History:		-
+	Logon Hours:		-
+
+Additional Information:
+	Privileges:		-","Microsoft-Windows-Security-Auditing","System.String[]","4738","2/13/2018 6:40:42 AM","2/13/2018 6:40:42 AM",,,
+"4672","Bit01","System.Byte[]","420955","(12548)","12548","SuccessAudit","Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege","Microsoft-Windows-Security-Auditing","System.String[]","4672","2/13/2018 6:40:28 AM","2/13/2018 6:40:28 AM",,,
+"4624","Bit01","System.Byte[]","420954","(12544)","12544","SuccessAudit","An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Type:			5
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","Microsoft-Windows-Security-Auditing","System.String[]","4624","2/13/2018 6:40:28 AM","2/13/2018 6:40:28 AM",,,
+"4797","Bit01","System.Byte[]","420953","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420952","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420951","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420950","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420949","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420948","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420947","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420946","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420945","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420944","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420943","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420942","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420941","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420940","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420939","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420938","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:26 AM","2/13/2018 6:40:26 AM",,,
+"4797","Bit01","System.Byte[]","420937","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420936","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420935","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420934","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420933","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420932","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420931","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420930","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420929","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420928","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420927","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420926","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420925","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420924","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420923","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420922","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420921","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420920","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420919","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420918","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420917","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"5061","Bit01","System.Byte[]","420916","(12290)","12290","SuccessAudit","Cryptographic operation.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	RSA
+	Key Name:	{2754103D-D983-4720-AD34-A29AA82E26A0}
+	Key Type:	%%2499
+
+Cryptographic Operation:
+	Operation:	%%2480
+	Return Code:	0x0","Microsoft-Windows-Security-Auditing","System.String[]","5061","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"5058","Bit01","System.Byte[]","420915","(12292)","12292","SuccessAudit","Key file operation.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	UNKNOWN
+	Key Name:	{2754103D-D983-4720-AD34-A29AA82E26A0}
+	Key Type:	%%2499
+
+Key File Operation Information:
+	File Path:	C:\ProgramData\Microsoft\Crypto\Keys\97728d3f22177aa872bc0d98e2d2889b_2e3576e9-2fff-4467-8e5d-63b38f01016b
+	Operation:	%%2458
+	Return Code:	0x0","Microsoft-Windows-Security-Auditing","System.String[]","5058","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420914","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420913","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4797","Bit01","System.Byte[]","420912","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"5061","Bit01","System.Byte[]","420911","(12290)","12290","SuccessAudit","Cryptographic operation.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	RSA
+	Key Name:	03ecd330-9a8f-4780-9d45-2520572b8abb
+	Key Type:	%%2499
+
+Cryptographic Operation:
+	Operation:	%%2480
+	Return Code:	0x0","Microsoft-Windows-Security-Auditing","System.String[]","5061","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"5058","Bit01","System.Byte[]","420910","(12292)","12292","SuccessAudit","Key file operation.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	UNKNOWN
+	Key Name:	03ecd330-9a8f-4780-9d45-2520572b8abb
+	Key Type:	%%2499
+
+Key File Operation Information:
+	File Path:	C:\ProgramData\Microsoft\Crypto\RSA\MachineKeys\dc0d711fc29f27c4933d93c75beec760_2e3576e9-2fff-4467-8e5d-63b38f01016b
+	Operation:	%%2458
+	Return Code:	0x0","Microsoft-Windows-Security-Auditing","System.String[]","5058","2/13/2018 6:40:25 AM","2/13/2018 6:40:25 AM",,,
+"4672","Bit01","System.Byte[]","420909","(12548)","12548","SuccessAudit","Special privileges assigned to new logon.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+
+Privileges:		SeAssignPrimaryTokenPrivilege
+			SeTcbPrivilege
+			SeSecurityPrivilege
+			SeTakeOwnershipPrivilege
+			SeLoadDriverPrivilege
+			SeBackupPrivilege
+			SeRestorePrivilege
+			SeDebugPrivilege
+			SeAuditPrivilege
+			SeSystemEnvironmentPrivilege
+			SeImpersonatePrivilege","Microsoft-Windows-Security-Auditing","System.String[]","4672","2/13/2018 6:40:15 AM","2/13/2018 6:40:15 AM",,,
+"4624","Bit01","System.Byte[]","420908","(12544)","12544","SuccessAudit","An account was successfully logged on.
+
+Subject:
+	Security ID:		S-1-5-18
+	Account Name:		BIT01$
+	Account Domain:		WORKGROUP
+	Logon ID:		0x3e7
+
+Logon Type:			5
+
+Impersonation Level:		%%1833
+
+New Logon:
+	Security ID:		S-1-5-18
+	Account Name:		SYSTEM
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e7
+	Logon GUID:		{00000000-0000-0000-0000-000000000000}
+
+Process Information:
+	Process ID:		0x2b4
+	Process Name:		C:\Windows\System32\services.exe
+
+Network Information:
+	Workstation Name:	-
+	Source Network Address:	-
+	Source Port:		-
+
+Detailed Authentication Information:
+	Logon Process:		Advapi  
+	Authentication Package:	Negotiate
+	Transited Services:	-
+	Package Name (NTLM only):	-
+	Key Length:		0
+
+This event is generated when a logon session is created. It is generated on the computer that was accessed.
+
+The subject fields indicate the account on the local system which requested the logon. This is most commonly a service such as the Server service, or a local process such as Winlogon.exe or Services.exe.
+
+The logon type field indicates the kind of logon that occurred. The most common types are 2 (interactive) and 3 (network).
+
+The New Logon fields indicate the account for whom the new logon was created, i.e. the account that was logged on.
+
+The network fields indicate where a remote logon request originated. Workstation name is not always available and may be left blank in some cases.
+
+The impersonation level field indicates the extent to which a process in the logon session can impersonate.
+
+The authentication information fields provide detailed information about this specific logon request.
+	- Logon GUID is a unique identifier that can be used to correlate this event with a KDC event.
+	- Transited services indicate which intermediate services have participated in this logon request.
+	- Package name indicates which sub-protocol was used among the NTLM protocols.
+	- Key length indicates the length of the generated session key. This will be 0 if no session key was requested.","Microsoft-Windows-Security-Auditing","System.String[]","4624","2/13/2018 6:40:15 AM","2/13/2018 6:40:15 AM",,,
+"4797","Bit01","System.Byte[]","420907","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	HomeGroupUser$
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:10 AM","2/13/2018 6:40:10 AM",,,
+"4797","Bit01","System.Byte[]","420906","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Guest
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:10 AM","2/13/2018 6:40:10 AM",,,
+"4797","Bit01","System.Byte[]","420905","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Beverly
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:10 AM","2/13/2018 6:40:10 AM",,,
+"4797","Bit01","System.Byte[]","420904","(13824)","13824","SuccessAudit","An attempt was made to query the existence of a blank password for an account.
+
+Subject:
+	Security ID:		S-1-5-21-3084526789-2061779564-2944513198-1002
+	Account Name:		Tre'
+	Account Domain:		BIT01
+	Logon ID:		0x228e125
+
+Additional Information:
+	Caller Workstation:	BIT01
+	Target Account Name:	Administrator
+	Target Account Domain:	Bit01","Microsoft-Windows-Security-Auditing","System.String[]","4797","2/13/2018 6:40:10 AM","2/13/2018 6:40:10 AM",,,
+"5061","Bit01","System.Byte[]","420903","(12290)","12290","SuccessAudit","Cryptographic operation.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	RSA
+	Key Name:	03ecd330-9a8f-4780-9d45-2520572b8abb
+	Key Type:	%%2499
+
+Cryptographic Operation:
+	Operation:	%%2480
+	Return Code:	0x0","Microsoft-Windows-Security-Auditing","System.String[]","5061","2/13/2018 6:40:08 AM","2/13/2018 6:40:08 AM",,,
+"5058","Bit01","System.Byte[]","420902","(12292)","12292","SuccessAudit","Key file operation.
+
+Subject:
+	Security ID:		S-1-5-19
+	Account Name:		LOCAL SERVICE
+	Account Domain:		NT AUTHORITY
+	Logon ID:		0x3e5
+
+Cryptographic Parameters:
+	Provider Name:	Microsoft Software Key Storage Provider
+	Algorithm Name:	UNKNOWN
+	Key Name:	03ecd330-9a8f-4780-9d45-2520572b8abb
+	Key Type:	%%2499
+
+Key File Operation Information:
+	File Path:	C:\ProgramData\Microsoft\Crypto\RSA\MachineKeys\dc0d711fc29f27c4933d93c75beec760_2e3576e9-2fff-4467-8e5d-63b38f01016b
+	Operation:	%%2458
+	Return Code:	0x0","Microsoft-Windows-Security-Auditing","System.String[]","5058","2/13/2018 6:40:08 AM","2/13/2018 6:40:08 AM",,,

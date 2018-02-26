@@ -1,0 +1,278 @@
+
+NAME
+    Restart-Computer
+    
+SYNOPSIS
+    Restarts ("reboots") the operating system on local and remote computers.
+    
+SYNTAX
+    Restart-Computer [[-ComputerName] <string[]>] [[-Credential] <PSCredential>] [-AsJob] [-Authentication {Default | N
+    one | Connect | Call | Packet | PacketIntegrity | PacketPrivacy | Unchanged}] [-Force] [-Impersonation {Default | A
+    nonymous | Identify | Impersonate | Delegate}] [-ThrottleLimit <int>] [-Confirm] [-WhatIf] [<CommonParameters>]
+    
+    
+DESCRIPTION
+    The Restart-Computer cmdlet restarts the operating system on the local and remote computers. 
+    
+    You can use the parameters of Restart-Computer to run the restart operations as a background job, to specify the au
+    thentication levels and alternate credentials, to limit the operations that run concurrently, and to force an immed
+    iate restart.
+    
+    This cmdlet does not require Windows PowerShell remoting unless you use the AsJob parameter.
+    
+
+PARAMETERS
+    -AsJob [<SwitchParameter>]
+        Runs the command as a background job.
+        
+        Note: To use this parameter, the local and remote computers must be configured for remoting and, on Windows Vis
+        ta and later versions of Windows, you must open Windows PowerShell with the "Run as administrator" option. For 
+        more information, see about_Remote_Requirements.
+        
+        When you use the AsJob parameter, the command immediately returns an object that represents the background job.
+         You can continue to work in the session while the job completes. The job is created on the local computer and 
+        the results from remote computers are automatically returned to the local computer. To manage the job, use the 
+        Job cmdlets. To get the job results, use the Receive-Job cmdlet.
+        
+        For more information about Windows PowerShell background jobs, see about_Jobs and about_Remote_Jobs.
+        
+        Required?                    false
+        Position?                    named
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -Authentication <AuthenticationLevel>
+        Specifies the authentication level that is used for the  WMI connection. (Restart-Computer uses WMI.) The defau
+        lt value is Packet.
+        
+        Valid values are:
+        
+        Unchanged:       The authentication level is the same as the previous command.
+        Default:         Windows Authentication
+        None:            No COM authentication
+        Connect:         Connect-level COM authentication
+        Call:            Call-level COM authentication
+        Packet:          Packet-level COM authentication.
+        PacketIntegrity: Packet Integrity-level COM authentication
+        PacketPrivacy:   Packet Privacy-level COM authentication.
+        
+        Required?                    false
+        Position?                    named
+        Default value                4
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -ComputerName <string[]>
+        Specifies one or more remote computers. The default is the local computer.
+        
+        Type the NETBIOS name, an IP address, or a fully qualified domain name of a remote computer. To specify the loc
+        al computer, type the computer name, a dot (.), or "localhost".
+        
+        This parameter does not rely on Windows PowerShell remoting. You can use the ComputerName parameter even if you
+        r computer is not configured to run remote commands.
+        
+        Required?                    false
+        Position?                    1
+        Default value                .
+        Accept pipeline input?       true (ByPropertyName)
+        Accept wildcard characters?  false
+        
+    -Credential <PSCredential>
+        Specifies a user account that has permission to perform this action. The default is the current user.
+        
+        Type a user name, such as "User01" or "Domain01\User01", or enter a PSCredential object, such as one from the G
+        et-Credential cmdlet.
+        
+        Required?                    false
+        Position?                    2
+        Default value                Current user
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -Force [<SwitchParameter>]
+        Forces an immediate restart of the computers.
+        
+        Required?                    false
+        Position?                    named
+        Default value                False
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -Impersonation <ImpersonationLevel>
+        Specifies the impersonation level to use when calling WMI. (Restart-Computer uses WMI.) The default value is "I
+        mpersonate".
+        
+        Valid values are:
+        
+        Default:      Default impersonation.
+        Anonymous:    Hides the identity of the caller.
+        Identify:     Allows objects to query the credentials of the caller.
+        Impersonate:  Allows objects to use the credentials of the caller.
+        
+        Required?                    false
+        Position?                    named
+        Default value                Impersonate
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -ThrottleLimit <int>
+        Specifies the maximum number of concurrent connections that can be established to run this command. If you omit
+         this parameter or enter a value of 0, the default value, 32, is used.
+        
+        The throttle limit applies only to the current command, not to the session or to the computer.
+        
+        Required?                    false
+        Position?                    named
+        Default value                32
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -Confirm [<SwitchParameter>]
+        Prompts you for confirmation before executing the command.
+        
+        Required?                    false
+        Position?                    named
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -WhatIf [<SwitchParameter>]
+        Describes what would happen if you executed the command without actually executing the command.
+        
+        Required?                    false
+        Position?                    named
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    <CommonParameters>
+        This cmdlet supports the common parameters: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer and OutVariable. For more information, type,
+        "get-help about_commonparameters".
+    
+INPUTS
+    None
+        You cannot pipe input to this cmdlet.
+    
+    
+OUTPUTS
+    None or System.Management.Automation.RemotingJob
+        When you use the AsJob parameter, the cmdlet returns a job object. Otherwise, it does not generate any output.
+    
+    
+NOTES
+    
+    
+        This cmdlet uses the Win32Shutdown  method of the WMI WIN32_OperatingSystem class.
+        
+    
+    -------------------------- EXAMPLE 1 --------------------------
+    
+    C:\PS>restart-computer
+    
+    
+    Description
+    -----------
+    This command restarts the local computer.
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 2 --------------------------
+    
+    C:\PS>restart-computer -computername Server01, Server02, localhost
+    
+    
+    Description
+    -----------
+    This command restarts two remote computers, Server01 and Server02, and the local computer, identified as "localhost
+    ".
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 3 --------------------------
+    
+    C:\PS>$j = restart-computer -computername Server01, Server02 -asjob 
+    
+    C:\PS> $results = $j | receive-job
+    
+    C:\PS> $results
+    
+    
+    Description
+    -----------
+    These commands run a Restart-Computer command as a background job on two remote computers, and then get the results
+    .
+    
+    The first command uses the AsJob parameter to run the command as a background job. The command saves the resulting 
+    job object in the $j variable.
+    
+    The second command uses a pipeline operator to send the job object in $j to the Receive-Job cmdlet, which gets the 
+    job results. The command saves the results in the $results variable. 
+    
+    The third command displays the result saved in the $results variable.
+    
+    Because the AsJob parameter creates the job on the local computer and automatically returns the results to the loca
+    l computer, you can run the Receive-Job command as a local command.
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 4 --------------------------
+    
+    C:\PS>restart-computer -comp Server01 -impersonation anonymous -authentication PacketIntegrity
+    
+    
+    Description
+    -----------
+    This command restarts the Server01 remote computer. The command uses customized impersonation and authentication se
+    ttings.
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 5 --------------------------
+    
+    C:\PS>$s = get-content domain01.txt
+    
+    C:\PS> $c = get-credential domain01\admin01
+    
+    C:\PS> restart-computer -computername $s -force -throttlelimit 10 -credential $c
+    
+    
+    Description
+    -----------
+    These commands force an immediate restart of all of the computers in Domain01. 
+    
+    The first command gets a list of computers in the domain and saves it in the $s variable.
+    
+    The second command gets the credentials of a domain administrator and saves them in the $c variable.
+    
+    The third command restarts the computers. It uses the ComputerName parameter to submit the list of computers in the
+     $s variable, the Force parameter to force an immediate restart, and the Credential parameter to submit the credent
+    ials saved in the $c variable. It also uses the ThrottleLimit parameter to limit the command to 10 concurrent conne
+    ctions.
+    
+    
+    
+    
+    
+    
+RELATED LINKS
+    Online version: http://go.microsoft.com/fwlink/?LinkID=135253
+    Add-Computer 
+    Checkpoint-Computer 
+    Remove-Computer 
+    Restore-Computer 
+    Stop-Computer 
+    Test-Connection 
+
+
+

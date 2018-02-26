@@ -1,0 +1,419 @@
+
+NAME
+    Get-EventLog
+    
+SYNOPSIS
+    Gets the events in an event log, or a list of the event logs, on the local or remote computers.
+    
+SYNTAX
+    Get-EventLog [-AsString] [-ComputerName <string[]>] [-List] [<CommonParameters>]
+    
+    Get-EventLog [-LogName] <string> [[-InstanceId] <Int64[]>] [-After <DateTime>] [-AsBaseObject] [-Before <DateTime>]
+     [-ComputerName <string[]>] [-EntryType <string[]>] [-Index <Int32[]>] [-Message <string>] [-Newest <int>] [-Source
+     <string[]>] [-UserName <string[]>] [<CommonParameters>]
+    
+    
+DESCRIPTION
+    The Get-EventLog cmdlet gets events and event logs on the local and remote computers. 
+    
+    Use the parameters of Get-EventLog to search for events by using their property values. Get-EventLog gets only the 
+    events that match all of the specified property values. 
+    
+    The cmdlets that contain the EventLog noun (the EventLog cmdlets) work only on classic event logs. To get events fr
+    om logs that use the Windows Event Log technology in Windows Vista and later versions of Windows, use Get-WinEvent.
+    
+
+PARAMETERS
+    -After <DateTime>
+        Gets only the events that occur after the specified date and time. Enter a DateTime object, such as the one ret
+        urned by the Get-Date cmdlet.
+        
+        Required?                    false
+        Position?                    named
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -AsBaseObject [<SwitchParameter>]
+        Returns a standard System.Diagnostics.EventLogEntry object for each event. Without this parameter, Get-EventLog
+         returns an extended PSObject object with additional EventLogName, Source, and InstanceId properties.
+        
+        To see the effect of this parameter, pipe the events to the Get-Member cmdlet and examine the TypeName value in
+         the result.
+        
+        Required?                    false
+        Position?                    named
+        Default value                False
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -AsString [<SwitchParameter>]
+        Returns the output as strings, instead of objects.
+        
+        Required?                    false
+        Position?                    named
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -Before <DateTime>
+        Gets only the events that occur before the specified date and time. Enter a DateTime object, such as the one re
+        turned by the Get-Date cmdlet.
+        
+        Required?                    false
+        Position?                    named
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -ComputerName <string[]>
+        Specifies a remote computer. The default is the local computer.
+        
+        Type the NetBIOS name, an Internet Protocol (IP) address, or a fully qualified domain name of a remote computer
+        . To specify the local computer, type the computer name, a dot (.), or "localhost".
+        
+        This parameter does not rely on Windows PowerShell remoting. You can use the ComputerName parameter of Get-Even
+        tLog even if your computer is not configured to run remote commands.
+        
+        Required?                    false
+        Position?                    named
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -EntryType <string[]>
+        Gets only events with the specified entry type. Valid values are Error, Information, FailureAudit, SuccessAudit
+        , and Warning. The default is all events.
+        
+        Required?                    false
+        Position?                    named
+        Default value                All events
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -Index <Int32[]>
+        Gets only events with the specified index values.
+        
+        Required?                    false
+        Position?                    named
+        Default value                All events
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -InstanceId <Int64[]>
+        Gets only events with the specified instance IDs.
+        
+        Required?                    false
+        Position?                    2
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -List [<SwitchParameter>]
+        Gets a list of event logs on the computer.
+        
+        Required?                    false
+        Position?                    named
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -LogName <string>
+        Specifies the event log.  Enter the log name (the value of the Log property; not the LogDisplayName) of one eve
+        nt log. Wildcard characters are not permitted. This parameter is required.
+        
+        Required?                    true
+        Position?                    1
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -Message <string>
+        Gets events that have the specified string in their messages. You can use this property to search for messages 
+        that contain certain words or phrases. Wildcards are permitted.
+        
+        Required?                    false
+        Position?                    named
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  true
+        
+    -Newest <int>
+        Specifies the maximum number of events retrieved. Get-EventLog gets the specified number of events, beginning w
+        ith the newest event in the log.
+        
+        Required?                    false
+        Position?                    named
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  false
+        
+    -Source <string[]>
+        Gets events that were written to the log by the specified sources. Wildcards are permitted.
+        
+        Required?                    false
+        Position?                    named
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  true
+        
+    -UserName <string[]>
+        Gets only the events that are associated with the specified user names. Enter names or name patterns, such as U
+        ser01, User*, or Domain01\User*. Wildcards are permitted.
+        
+        Required?                    false
+        Position?                    named
+        Default value                
+        Accept pipeline input?       false
+        Accept wildcard characters?  true
+        
+    <CommonParameters>
+        This cmdlet supports the common parameters: Verbose, Debug,
+        ErrorAction, ErrorVariable, WarningAction, WarningVariable,
+        OutBuffer and OutVariable. For more information, type,
+        "get-help about_commonparameters".
+    
+INPUTS
+    None.
+        You cannot pipe input to this cmdlet.
+    
+    
+OUTPUTS
+    System.Diagnostics.EventLogEntry. System.Diagnostics.EventLog. System.String
+        If the LogName parameter is specified, the output is a collection of EventLogEntry objects (System.Diagnostics.
+        EventLogEntry). 
+        
+        If only the List parameter is specified, the output is a collection of EventLog objects (System.Diagnostics.Eve
+        ntLog). 
+        
+        If both the List and AsString parameters are specified, the output is a collection of Strings (System.String).
+    
+    
+NOTES
+    
+    
+        
+        
+    
+    -------------------------- EXAMPLE 1 --------------------------
+    
+    C:\PS>get-eventlog -list
+    
+    
+    Description
+    -----------
+    This command displays information about the event logs on the computer.
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 2 --------------------------
+    
+    C:\PS>get-eventlog -newest 5 -logname application
+    
+    
+    Description
+    -----------
+    This command displays the five most recent entries in the Application event log.
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 3 --------------------------
+    
+    C:\PS>$events = get-eventlog -logname system -newest 1000
+    
+    C:\PS> $events | group-object -property source -noelement | sort-object -property count -descending
+    
+    Count Name
+    ----- ----
+       75 Service Control Manager
+       12 Print
+        6 UmrdpService
+        2 DnsApi
+        2 DCOM
+        1 Dhcp
+        1 TermDD
+        1 volsnap
+    
+    
+    Description
+    -----------
+    This example shows how to find all of the sources that are represented in the 1000 most recent entries in the Syste
+    m event log.
+    
+    The first command gets the 1,000 most recent entries from the System event log and stores them in the $events varia
+    ble. 
+    
+    The second command uses a pipeline operator (|) to send the events in $events to the Group-Object cmdlet, which gro
+    ups the entries by the value of the Source property. The command uses a second pipeline operator to send the groupe
+    d events to the Sort-Object cmdlet, which sorts them in descending order, so the most frequently appearing source i
+    s listed first.
+    
+    Source is just property of event log entries. To see all of the properties of an event log entry, pipe the events t
+    o the Get-Member cmdlet.
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 4 --------------------------
+    
+    C:\PS>get-eventlog -logname System -EntryType Error
+    
+    
+    Description
+    -----------
+    This command gets only error events from the System event log.
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 5 --------------------------
+    
+    C:\PS>get-eventlog -logname System -instanceID 3221235481 -Source "DCOM"
+    
+    
+    Description
+    -----------
+    This command gets events from the System log that have an InstanceID of 3221235481 and a Source value of "DCOM."
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 6 --------------------------
+    
+    C:\PS>get-eventlog -logname "Windows PowerShell" -computername localhost, Server01, Server02
+    
+    
+    Description
+    -----------
+    This command gets the events from the "Windows PowerShell" event log on three computers, Server01, Server02, and th
+    e local computer, known as "localhost".
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 7 --------------------------
+    
+    C:\PS>get-eventlog -logname "Windows PowerShell" -message "*failed*"
+    
+    
+    Description
+    -----------
+    This command gets all the events in the Windows PowerShell event log that have a message value that includes the wo
+    rd "failed".
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 8 --------------------------
+    
+    C:\PS>$a = get-eventlog -log System -newest 1
+    
+    C:\PS> $a | format-list -property *
+    
+    EventID            : 7036
+    MachineName        : Server01
+    Data               : {}
+    Index              : 10238
+    Category           : (0)
+    CategoryNumber     : 0
+    EntryType          : Information
+    Message            : The description for Event ID
+    Source             : Service Control Manager
+    ReplacementStrings : {WinHTTP Web Proxy Auto-Disco
+    InstanceId         : 1073748860
+    TimeGenerated      : 4/11/2008 9:56:05 PM
+    TimeWritten        : 4/11/2008 9:56:05 PM
+    UserName           :
+    Site               :
+    Container          :
+    
+    
+    Description
+    -----------
+    This example shows how to display all of the property values of an event. 
+    
+    The first command gets the newest event from the System event log and saves it in the $a variable. 
+    
+    The second command uses a pipeline operator (|) to send the event in $a to the Format-List command, which displays 
+    all (*) of the event properties.
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 9 --------------------------
+    
+    C:\PS>get-eventlog -log application -source outlook | where {$_.eventID -eq 34}
+    
+    
+    Description
+    -----------
+    This command gets events in the Application event log where the source is Outlook and the event ID is 34. Even thou
+    gh Get-EventLog does not have an EventID parameter, you can use the Where-Object cmdlet to select events based on t
+    he value of any event property.
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 10 --------------------------
+    
+    C:\PS>get-eventlog -log system -username NT* | group-object -property username -noelement | format-table Count, Nam
+    e -auto
+    
+    Count Name
+    ----- ----
+     6031 NT AUTHORITY\SYSTEM
+       42 NT AUTHORITY\LOCAL SERVICE
+        4 NT AUTHORITY\NETWORK SERVICE
+    
+    
+    Description
+    -----------
+    This command returns the events in the system log grouped by the value of  their UserName property. The Get-EventLo
+    g command uses the UserName parameter to get only events in which the user name begins with "NT*".
+    
+    
+    
+    
+    
+    -------------------------- EXAMPLE 11 --------------------------
+    
+    C:\PS>$May31 = get-date 5/31/08
+    
+    C:\PS> $July1 = get-date 7/01/08
+    
+    C:\PS> get-eventlog -log "Windows PowerShell" -entrytype Error -after $may31 -before $july1
+    
+    
+    Description
+    -----------
+    This command gets all of the errors in the Windows PowerShell event log that occurred in June 2008.
+    
+    
+    
+    
+    
+    
+RELATED LINKS
+    Online version: http://go.microsoft.com/fwlink/?LinkID=113314
+    Get-WinEvent 
+    Clear-EventLog 
+    Limit-EventLog 
+    New-EventLog 
+    Remove-EventLog 
+    Show-EventLog 
+    Write-EventLog 
+    Get-WinEvent 
+
+
+

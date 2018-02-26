@@ -1,0 +1,7 @@
+-Automatic Script Writing Using Get-History
+http://technet.microsoft.com/en-us/library/ff730961.aspx
+
+-Windows Powershell 1.0 guide
+http://technet.microsoft.com/en-us/library/hh848793.aspx
+
+-
