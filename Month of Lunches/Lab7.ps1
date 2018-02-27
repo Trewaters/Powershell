@@ -55,3 +55,18 @@ Install-Module
 Update-Module
 
 $PSVersionTable
+
+#PowerShellGet from gallery
+Register-PSRepository -Name PowerShellGallery -SourceLocation http://PowerShellGallery.com
+Find-Module *Active* | Format-List
+Install-Module
+Update-Module
+
+#Lab Answer - Run the Networking troubleshooting pack
+get-module *trouble* -list
+Import-Module TroubleShootingPack
+get-command -Module troubleshootingpack
+help get-troubleshootingpack -Full
+dir "C:\windows\diagnostics\system"
+$pack=get-troubleshootingpack "C:\windows\diagnostics\system\Networking"
+Invoke-TroubleshootingPack $pack
