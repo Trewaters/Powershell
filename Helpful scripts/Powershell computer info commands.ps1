@@ -28,3 +28,6 @@ gci env: | sort name
 Restart-Computer
 # Restart remote computer
 Restart-Computer -ComputerName "COMPUTER_NAME" -Impersonation Anonymous -Authentication PacketIntegrity
+
+# Bios information
+Get-WmiObject win32_bios

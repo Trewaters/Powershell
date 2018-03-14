@@ -28,4 +28,10 @@ New-Object -TypeName PSObject -Property @{
 # Same as Ping
 Test-Connection "D-BSpring" -Count 100
 
-Get-Help Test-Connection 
+
+
+Get-Help Test-Connection -Detailed
+
+# BART EXAMPLE
+
+Test-Connection "ess.bart.gov"
