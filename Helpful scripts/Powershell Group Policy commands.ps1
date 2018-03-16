@@ -51,7 +51,7 @@ Get-GPO -All | ForEach-Object {
 # details for Group Policy
 Get-GPO "Map G Drive [eBART OAC]"
 
-# post on auditing GPO changes ( https://blogs.technet.microsoft.com/ashleymcglone/2015/01/26/forensics-audit-group-policy-links-and-changes-with-powershell/ )
+# HELP post on auditing GPO changes ( https://blogs.technet.microsoft.com/ashleymcglone/2015/01/26/forensics-audit-group-policy-links-and-changes-with-powershell/ )
 
 
 # TEST
@@ -84,3 +84,6 @@ Get-GPO -All | Sort-Object displayname | Where-Object { If ( $_ | Get-GPOReport 
 #$_.DisplayName | Out-File .\UnLinkedGPOS.txt -Append
 #$_.Displayname | remove-gpo -Confirm
 }}
+
+# HELP local group policy ( http://brandonpadgett.com/powershell/Local-gpo-powershell/ )
+# HELP MS Docs on local group policy ( https://docs.microsoft.com/en-us/powershell/module/grouppolicy/?view=win10-ps )

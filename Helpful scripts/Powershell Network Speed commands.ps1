@@ -26,7 +26,7 @@ New-Object -TypeName PSObject -Property @{
 }            
 
 # Same as Ping
-Test-Connection "D-BSpring" -Count 100
+Test-Connection "D-BSpring" -Count 1000
 
 
 
