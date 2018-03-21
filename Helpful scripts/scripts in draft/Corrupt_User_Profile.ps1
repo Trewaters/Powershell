@@ -7,6 +7,7 @@ $winUser = Read-Host -Prompt 'Enter username'
 
 # testing I have the correct username
 #Write-Host "Fixing username $winUser."
+Get-ChildItem 'HKLM:\Software\Microsoft\Windows NT\CurrentVersion\ProfileList' | Where-Object -FilterScript { ($_.GetValue('ProfileImagePath')  -eq "C:\Users\lgrisby") } | Out-String
 
 
 # profile folder in Registry ( HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList )
@@ -23,8 +24,8 @@ $profilelist = 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList'
 
 # abbreviated 
 #Get-childItem 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList' | % {Get-ItemProperty $_.pspath } | Select profileImagePath, sid
-# detailed
-Get-childItem 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList' | ForEach-Object {Get-ItemProperty $_.pspath } | Select-Object profileImagePath, sid
+# detailed command without aliases and shortcuts
+#Get-childItem 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList' | ForEach-Object {Get-ItemProperty $_.pspath } | Select-Object profileImagePath, sid
 
 # another way to access the same information
 # abbreviated
@@ -36,9 +37,10 @@ Get-childItem 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList' |
 # show last time profile was used
 #gwmi win32_userprofile | select @{LABEL="last used";EXPRESSION={$_.ConvertToDateTime($_.lastusetime)}}, LocalPath, SID | ft -a
 
-#
+# List the profile image for all users on the local computer
 $path = 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\*'
 Get-ItemProperty -Path $path | Select-Object -Property PSChildName, ProfileImagePath
+
 #
 $objSID = New-Object System.Security.Principal.SecurityIdentifier("SID")
 $objUser = $objSID.Translate( [System.Security.Principal.NTAccount])
@@ -57,6 +59,8 @@ echo $items | Select-Object -Property PSChildName, ProfileImagePath
 Get-ChildItem 'HKLM:\Software\Microsoft\Windows NT\CurrentVersion\ProfileList' | ForEach-Object { $_.GetValue('ProfileImagePath') }
 #ERROR - line below not working
 #Get-ChildItem 'HKLM:\Software\Microsoft\Windows NT\CurrentVersion\ProfileList' | ForEach-Object { $profilePath = $_.GetValue('ProfileImagePath') Get-ChildItem -Path "$profilePath\AppData\Local\Temp" }
+# This line worked. Now I need to figure out how to parse the current username into this path
+#Get-ChildItem 'HKLM:\Software\Microsoft\Windows NT\CurrentVersion\ProfileList' | Where-Object -FilterScript { ($_.GetValue('ProfileImagePath')  -eq "C:\Users\lgrisby") } | Out-String
 
 # windows user profile information
 get-CIMinstance -ClassName win32_UserProfile | select -first 1
