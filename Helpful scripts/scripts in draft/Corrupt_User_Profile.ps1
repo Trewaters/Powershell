@@ -10,7 +10,11 @@ $winUser = Read-Host -Prompt 'Enter username'
 
 
 # profile folder in Registry ( HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList )
-# HELP with Registry Keys (https://docs.microsoft.com/en-us/powershell/scripting/getting-started/cookbooks/working-with-registry-keys?view=powershell-6)
+# HELP with Registry Keys ( https://docs.microsoft.com/en-us/powershell/scripting/getting-started/cookbooks/working-with-registry-keys?view=powershell-6 )
+# Find all with Recurse
+Get-ChildItem -Path hkcu:\ -Recurse
+# find all keys under software
+Get-ChildItem -Path HKCU:\Software -Recurse | Where-Object -FilterScript {($_.SubKeyCount -le 1) -and ($_.ValueCount -eq 4) } 
 
 $profilelist = 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList'
 # dir is an alias for 'Get-childItem'
@@ -76,13 +80,15 @@ Get-WMIObject -class Win32_UserProfile | % {if($_.LastUseTime -gt 0){($_.Convert
 
 Get-WmiObject Win32_OperatingSystem | Get-Member -MemberType *method
 
+# PRACTICE - list the HKEY_USERS
+Get-ChildItem REGISTRY::HKEY_USERS |select name
 
 #my steps
 Set-Location 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList'
 
 Get-ChildItem
 
-Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-21-3117278555-971133436-1423899629-7044'
+Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList'
 
 
 # User Profile should start with an SID key = S-1-5...
