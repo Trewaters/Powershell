@@ -26,12 +26,22 @@ New-Object -TypeName PSObject -Property @{
 }            
 
 # Same as Ping
-Test-Connection "D-BSpring" -Count 1000
-
-
-
-Get-Help Test-Connection -Detailed
+# with delay this should last 15 minutes.
+Test-Connection "ess.bart.gov" -Count 300 -Delay 3
 
 # BART EXAMPLE
+# Computer List I can test D-GGrove, ess.bart.gov, D-Alowery2, OHYForewker2-w7, ITHD-Extra
 
 Test-Connection "ess.bart.gov"
+
+
+# Testing
+
+Get-Help Get-WmiObject -Detailed
+Get-Help Get-CimInstance -Detailed
+Get-CimInstance -ClassName Win32_Process
+
+Get-CimInstance -ClassName Win32_NetworkAdapter
+Get-WmiObject -Class Win32_NetworkAdapter
+
+Get-CimInstance –Namespace root –ClassName __Namespace
