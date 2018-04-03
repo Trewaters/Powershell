@@ -7,7 +7,7 @@ Get-Help Get-Service -detailed
 Get-Content .\computer.txt | Get-Member
 
 # 2nd examine the full help of command B
-Get-Help Get-Service -Full
+Get-Help Get-ADPrincipalGroupMembership -Full
 
 #
 Get-Process -name note* | Stop-Process
@@ -24,9 +24,15 @@ import-csv "C:\Users\lgrisby\Downloads\GitHub\Powershell\Month of Lunches\Labs\n
 
 "C:\Users\lgrisby\Downloads\GitHub\Powershell\Month of Lunches\Labs\ADUser-info-LGrisby.txt"
 
-Get-ADUser -Filter 'surname -like "*grisby"' | FT Name, SamAccountName, DistinguishedName -A
-Get-ADUser -Filter 'Name -like "*lewis"' | gm
-Get-ADUser -Filter 'surname -like "*lee"' | Out-File -FilePath "C:\Users\lgrisby\Downloads\GitHub\Powershell\Month of Lunches\Labs\Get-ADUser-info-.txt"
+Get-ADUser -Filter 'surname -like "*Deasy*"' | FT Name, SamAccountName, DistinguishedName -A
+Get-ADUser -Filter 'Name -like "patrick*"' | gm
+Get-ADUser -Filter 'surname -like "*grisby"' | Out-File -FilePath "C:\Users\lgrisby\Downloads\GitHub\Powershell\Month of Lunches\Labs\Get-ADUser-info-.txt"
+
+# Looking for matching usernames
+Get-ADUser -Filter 'SamAccountName -like "MPallen*"' | Out-File -FilePath "H:\Work Temp File\1-Create AD Account\Get-ADUser-info-MPallen.txt"
+
+#find groups the AD user is a member of
+Get-ADPrincipalGroupMembership MPallen | select name | Out-File -FilePath "H:\Work Temp File\1-Create AD Account\Get-Groups-MPallen.txt"
 
 # Copied from the book
 import-csv .\newusers.csv |
@@ -35,6 +41,8 @@ select-object -property *,
 @{label='Name';expression={$_.login}},
 @{n='Department';e={$_.Dept}} |
 New-ADUser
+
+
 
 #Testing
 Get-Help Get-ADComputer -Full
