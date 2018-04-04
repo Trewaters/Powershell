@@ -27,7 +27,7 @@ New-Object -TypeName PSObject -Property @{
 
 # Same as Ping
 # with delay this should last 15 minutes.
-Test-Connection "ess.bart.gov" -Count 300 -Delay 3
+Test-Connection "d-dwatry" -Count 300 -Delay 3
 
 # BART EXAMPLE
 # Computer List I can test D-GGrove, ess.bart.gov, D-Alowery2, OHYForewker2-w7, ITHD-Extra
