@@ -25,14 +25,15 @@ import-csv "C:\Users\lgrisby\Downloads\GitHub\Powershell\Month of Lunches\Labs\n
 "C:\Users\lgrisby\Downloads\GitHub\Powershell\Month of Lunches\Labs\ADUser-info-LGrisby.txt"
 
 Get-ADUser -Filter 'surname -like "*Deasy*"' | FT Name, SamAccountName, DistinguishedName -A
-Get-ADUser -Filter 'Name -like "patrick*"' | gm
-Get-ADUser -Filter 'surname -like "*grisby"' | Out-File -FilePath "C:\Users\lgrisby\Downloads\GitHub\Powershell\Month of Lunches\Labs\Get-ADUser-info-.txt"
+Get-ADUser -Filter 'Name -like "Kellie*"' | gm
+Get-ADUser -Filter 'surname -like "*Buitrago"' | Out-File -FilePath "C:\Users\lgrisby\Downloads\GitHub\Powershell\Month of Lunches\Labs\Get-ADUser-info-.txt"
 
 # Looking for matching usernames
-Get-ADUser -Filter 'SamAccountName -like "MPallen*"' | Out-File -FilePath "H:\Work Temp File\1-Create AD Account\Get-ADUser-info-MPallen.txt"
+Get-ADUser -Filter 'SamAccountName -like "KBuitra*"' | Out-File -FilePath "H:\Work Temp File\1-Create AD Account\Get-ADUser-info-JBalles.txt"
 
 #find groups the AD user is a member of
 Get-ADPrincipalGroupMembership MPallen | select name | Out-File -FilePath "H:\Work Temp File\1-Create AD Account\Get-Groups-MPallen.txt"
+# Groups  ( Name (RDN), Description, In Folder ) Description has cost center
 
 # Copied from the book
 import-csv .\newusers.csv |
@@ -59,3 +60,15 @@ Get-ADComputer -Filter * -searchbase "OU=LKS11,OU=LKS,OU=Desktops,OU=Workstation
 Get-ADComputer -Filter * -searchbase "OU=LKS11,OU=LKS,OU=Desktops,OU=Workstations,DC=BART,DC=DOMAIN" | Select-Object |GM
 #select only the name and save that to a CSV file
 Get-ADComputer -Filter * -searchbase "OU=LKS11,OU=LKS,OU=Desktops,OU=Workstations,DC=BART,DC=DOMAIN" | Select-Object name | Export-CSV -Path "C:\Users\lgrisby\Downloads\GitHub\Powershell\Month of Lunches\Labs\ADComputer-info-list of LKS11 computer names.txt"
+
+# 9.8
+#Question 1
+Get-Help Get-HotFix -Full > "C:\Users\lgrisby\Downloads\GitHub\Powershell\Saved Help Files\help_Get-HotFix.txt"
+
+Get-HotFix  > "C:\Users\lgrisby\Downloads\GitHub\Powershell\Month of Lunches\Labs\lab9_Get-HotFix.txt"
+
+$vComputerList = get-content computers.txt
+
+$vComputerList | foreach { if (!(get-hotfix -id KB4033342 -computername $_)) { add-content $_ -path Missing-KB4033342.txt}}
+
+get-hotfix -id "KB2830477" -computername "d-007"
