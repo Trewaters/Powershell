@@ -19,3 +19,5 @@ Get-ADGroupMember -Identity "cc_Common_Expense" | Group ObjectClass
 
 # Get domain controller for the forest
 Get-ADDomainController -Discover -Service "GlobalCatalog"
+
+# How to change computer name ( https://www.techrepublic.com/blog/data-center/how-to-rename-a-domain-computer-with-windows-powershell/ )
